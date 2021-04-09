@@ -183,17 +183,92 @@ footer a{
 
 
 /* MEDIA QUERIES */
-
-@media screen and (max-width: 700px){
+/* tablets */
+@media screen and (max-width: 768px){
+    header nav{
+        float: none;
+        clear: left;
+        width: 100%;
+    }
+    header nav ul{
+        margin: 0%;
+        padding: 0%;
+    }
+    h1.logo{
+        margin: 10px auto 0px;
+        float: none;
+    }
+    header nav ul li{
+        margin: 10px 0;
+        width: 20%;
+        padding: 0px;
+        text-align: center;
+    }
     #featured li{
+        width: 48%;
+    }
+    footer ul{
         width: 46%;
+        text-align: center;
     }
 
 }
-@media screen and (max-width: 500px){
+
+
+/* mobiles */
+@media screen and (max-width: 480px){
+
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%;
+        background: url(images/menu-button.png) no-repeat 98% center;
+        cursor: pointer;
+    }
+    header .wrapper{
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper{
+        padding: 0;
+    }
+    header nav ul{
+        overflow: hidden;
+        background: #8b8888;
+        //height: 0
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    header nav ul li{
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    header nav ul li a{
+        color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid #404040;
+        display: block;
+        margin: 0;
+    }
     #featured li{
-        width: 92%;
+        width: 90%;
+        margin: 20px 5%;
     }
-
+    footer ul{
+        width: 98%;
+        text-align: center;
+    }
+    #home-menu li{
+        float: none;
+        width: 96%;
+        margin: 30px 2% !important;
+    }
+    #main-banner img{
+        position: relative;
+        width: 180%;
+        left: -40%;
+    }
 }
-
